@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LinearLayout"
+    android:orientation="vertical"
+    tools:context="com.example.android.justjava.MainActivity">
+
+    <TextView
+        style="@style/quantity"
+        android:layout_marginBottom="16dp"
+        android:text="Quantity" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:onClick="decrement"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/quantity_text_view"
+            style="@style/number"
+            android:text="0" />
+
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:onClick="increment"
+            android:text="+" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/quantity"
+        android:layout_marginTop="16dp"
+        android:text="Price" />
+
+    <TextView
+        android:id="@+id/price_text_view"
+        style="@style/number"
+        android:text="0€" />
+
+    <Button
+        style="@style/OrderButton"
+        android:onClick="submitOrder"
+        android:text="order" />
+
+</LinearLayout>
